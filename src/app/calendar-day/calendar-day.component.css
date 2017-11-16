@@ -1,0 +1,17 @@
+.calendar__day {
+  position: relative;
+  float: left;
+  padding: 10px;
+  border: 1px solid #DDD;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.calendar__day_active {
+  background-color: #D8EAF7;
+}
+
+.calendar__day-number {
+  color: #BBB;
+}

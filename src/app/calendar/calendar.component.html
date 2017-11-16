@@ -1,0 +1,15 @@
+<div class="calendar">
+  <div class="calendar__header clearfix">
+    <div class="calendar__header-item">Понедельник</div>
+    <div class="calendar__header-item">Вторник</div>
+    <div class="calendar__header-item">Среда</div>
+    <div class="calendar__header-item">Четверг</div>
+    <div class="calendar__header-item">Пятница</div>
+    <div class="calendar__header-item">Суббота</div>
+    <div class="calendar__header-item">Воскресенье</div>
+  </div>
+
+  <div class="calendar__body clearfix">
+    <app-calendar-day *ngFor="let day of calendarDays" [dayMeta]="day" [calendarEvents]="calendarEvents"></app-calendar-day>
+  </div>
+</div>

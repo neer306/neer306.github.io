@@ -1,0 +1,51 @@
+.calendar__day-event {
+  margin-top: 10px;
+  background-color: #B5EA8C;
+  color: #555;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.calendar__day-event-detail {
+  color: #555;
+  position: absolute;
+  width: 250px;
+  right: 155px;
+  top: 20px;
+  z-index: 2;
+  background-color: #FFF;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.22);
+}
+
+.calendar__day-event-detail:after {
+  top: 24%;
+  right: -4px;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  margin-left: -5px;
+  box-sizing: border-box;
+  border: 8px solid black;
+  border-color: transparent #FFF #FFF transparent;
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+  box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.22);
+}
+
+.calendar__day-event-detail-name {
+  font-size: 16px;
+  padding: 12px 10px;
+  border-bottom: 1px solid #DDD;
+}
+
+.calendar__day-event-detail-about {
+  padding: 12px 10px;
+  border-bottom: 1px solid #DDD;
+}
+
+.calendar__day-event-detail-members {
+  padding: 12px 10px;
+  background-color: #F7F7F7;
+}

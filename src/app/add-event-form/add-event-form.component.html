@@ -1,0 +1,9 @@
+<div class="add-event-form" *ngIf="show">
+  <form>
+    <input type="text" class="add-event-form__input" name="name" [(ngModel)]="name" placeholder="Название события"/>
+    <input type="text" class="add-event-form__input" name="members" [(ngModel)]="members" placeholder="Имена участников"/>
+    <textarea class="add-event-form__text" rows="8" name="about" [(ngModel)]="about" placeholder="Описание"></textarea>
+    <button class="add-event-form__button add-event-form__button_submit" (click)="formSubmit(name, members, about)">Добавить</button>
+    <button type="reset" class="add-event-form__button add-event-form__button_reset" (click)="hideForm()">Отменить</button>
+  </form>
+</div>

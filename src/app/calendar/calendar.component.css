@@ -1,0 +1,14 @@
+.calendar {
+  margin-top: 10px;
+}
+
+.calendar__header-item {
+  color: #BBB;
+  padding: 5px;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #EEE;
+  width: 150px;
+  border: 1px solid #DDD;
+}

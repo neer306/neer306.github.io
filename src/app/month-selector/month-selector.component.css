@@ -1,0 +1,15 @@
+.month-selector__button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline:0;
+  cursor: pointer;
+}
+
+.month-selector__month-name {
+  color: #888;
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+  display: inline-block;
+}

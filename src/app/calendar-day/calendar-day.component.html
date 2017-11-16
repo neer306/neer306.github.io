@@ -1,0 +1,5 @@
+<div class="calendar__day" [class.calendar__day_active]="showForm" (click)="addEventForm()">
+  <div class="calendar__day-number">{{ dayMeta.number }}</div>
+  <app-calendar-day-event *ngFor="let event of dayMeta.events" [event]="event"></app-calendar-day-event>
+  <app-add-event-form [showForm]="showForm" [date]="dayMeta.dateObject"></app-add-event-form>
+</div>

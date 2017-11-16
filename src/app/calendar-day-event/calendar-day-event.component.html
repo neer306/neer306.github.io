@@ -1,0 +1,13 @@
+<div class="calendar__day-event" (click)="showDetail()">
+  {{ event.name }}
+  <div *ngIf="selected" class="calendar__day-event-detail">
+    <div class="calendar__day-event-detail-name">{{ event.name }}</div>
+    <div class="calendar__day-event-detail-about">
+      <div>{{ event.date | date:'dd MMMM yyyy'}}</div>
+      <div>{{ event.about }}</div>
+    </div>
+    <div class="calendar__day-event-detail-members">
+      <span>{{ event.members | join: ', ' }}</span>
+    </div>
+  </div>
+</div>
